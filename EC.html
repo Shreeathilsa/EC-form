@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IIT Gandhinagar Election Commission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .logo{
+            
+            width:20%; 
+            height:15%; 
+            margin-top:150px;
+            margin-bottom: 20px;
+        }
+        .form-group button:hover {
+            background-color: red;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Center vertically */
+            margin-bottom: 20px;} 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <img class="logo" src="https://students.iitgn.ac.in/Election_Commission/img/sec-logo.jpg" alt="Election Commission Logo">
+        <h2>IIT Gandhinagar Election Commission Form</h2>
+        </div>
+        <form action="https://script.google.com/macros/s/AKfycbwaEtF1M-CryC9rD3WdZJaw6W4-7nER8Y_nH5ihe01xYnJcBvUE1fSSbEmSTzoSzw-aVA/exec" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>   
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Institute Email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="roll">Roll Number:</label> 
+                <input type="integer" id="roll" name="roll" required>  
+            </div>
+            <div class="form-group"> 
+                <label for="position">Position Applying for:</label>
+                <select id="position" name="position" required>
+                    <option value="Chief Election Commissioner">Chief Election Commissioner</option> 
+                    <option value="Election Commissioner">Election Commissioner</option>
+            
+                    <option value="Election Officer">Election Officer</option>
+                    <option value="Technical Officer">Technical Officer</option>
+                    <option value="Other">Other</option> 
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Why do you want to run for this position?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
